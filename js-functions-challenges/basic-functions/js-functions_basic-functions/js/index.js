@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "The Lord of the JavaScript";
+const author = "Mario";
+let rating = 4.2; // I used let here because this rating could change in the future
+let sales = 120; // same for this code
 // --^-- write your code here --^--
 
 /*
@@ -27,9 +30,29 @@ Then:
 */
 
 // --v-- write your code here --v--
+console.log("Title: " + title);
+console.log("Author: " + author);
+console.log("Rating: " + rating);
+console.log("Sales: " + sales);
 
 // --^-- write your code here --^--
+//let sales = 120; 
+//console.log (sales += 1);
 
+//let sales = 120;
+//sales++; // increases by 1
+//console.log(sales);
+
+// --v-- write your code here --v--
+// updated code sales 
+sales += 5;
+console.log("Updated Sales:", sales); // should increment the value to 125
+
+// --v-- write your code here --v--
+// updated code rating 
+rating = 4.8;
+console.log("Updated Rating:", rating); // the new outcome should be 4.8
+ 
 /*
 3: The logging code above is repetitive and hard to maintain.
    Refactor your code by doing the following:
@@ -40,5 +63,21 @@ Then:
 */
 
 // --v-- write your code here --v--
+function logBookData () {
+console.log("Title: " + title);
+console.log("Author: " + author);
+console.log("Rating: " + rating);
+console.log("Sales: " + sales);
+};
 
 // --^-- write your code here --^--
+logBookData ();
+
+// --^-- write your code here --^--
+sales += 10;
+logBookData ();
+
+// --^-- write your code here --^--
+
+sales *= 15;
+logBookData ();
