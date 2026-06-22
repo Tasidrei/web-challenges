@@ -24,7 +24,7 @@ const nameOfAlex = personAlex.name;
 const ageOfAlex = personAlex.age;
 console.log (personAlex)
 
-// second way to complete the above task
+// second and easier way to complete the above task
 const nameOfAlex = personAlex["name"];
 const ageOfAlex = personAlex["age"];
 console.log(nameOfAlex); // "Alex"
