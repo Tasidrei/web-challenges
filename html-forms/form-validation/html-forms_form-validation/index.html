@@ -29,24 +29,30 @@
           <label for="first-name">First Name</label>
           <input
             type="text"
-            name="firstName" required
+            name="firstName" 
             id="first-name"
             placeholder="Your first name"
+            minlength="2"
+            maxlength="30"
+            required
           />
 
           <label for="last-name">Last Name</label>
           <input
             type="text"
-            name="lastName" required
+            name="lastName" 
             id="last-name"
             placeholder="Your last name"
+            minlength="2"
+            maxlength="30"
+            required
           />
 
           <label for="age">Age</label>
-          <input type="number" name="age" id="age" />
+          <input type="number" name="age" id="age" min="14" required/>
 
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+          <input type="text" name="email" id="email" required />
         </fieldset>
 
         <fieldset>
