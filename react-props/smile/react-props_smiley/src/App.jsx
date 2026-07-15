@@ -5,7 +5,11 @@ export default function App() {
 function Smiley({ isHappy }) {
   return (
     <div>
-      {isHappy ? "😊" : "😢"}
+      {isHappy ? (
+        <p>The individual is smiling happily!</p>
+      ) : (
+        <p>The individual looks sad and disappointed!</p>
+      )}
     </div>
   );
-}
+};
